@@ -1,4 +1,6 @@
-* {
+* ,
+*::before,
+*::after{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -29,6 +31,7 @@
     width: 900px;
     height: 700px;
     grid-column: 2;
+    text-align: center;
   }
   .header3 {
     font-family: sans-serif;
@@ -43,6 +46,10 @@
 .image {
   text-align: center;
   padding: 10px;
+}
+.work{
+  text-align: center;
+  font-family: sans-serif;
 }
 p {
   padding: 5px;
@@ -61,18 +68,65 @@ h2 {
 h3 {
   margin: 10px;
 }
-button {
-  text-align: center;
-  margin-left: 35%;
-  margin-top: 5%;
-  background-color: white;
-  font-size: 20px;
-  width: 100px;
-  border: 2px solid black;
+
+/* scrolling image*/
+.image-web{
+  width: 900px;
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 7%;
+  background: url(/chayathorndev.github.io/images/web.png);
+  background-size: cover;
+  background-position-y: 0%;
+  transition: background 3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-button:hover {
-  background-color: red;
-  border: 2px solid yellow;
-  color: black;
+.image-web::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(to right, #ccc, #e61313);
+  transition: all 3s ease-in-out;
+}
+
+.image-web:hover{
+  background-position-y: 100%;
+}
+.image-web:hover::before{
+  width: 100%;
+}
+.image-web:hover .btn{
+  bottom: 2rem;
+}
+.btn{
+position: relative;
+bottom: -2rem;
+transform: translateX(-50%);
+text-decoration: none;
+color: aliceblue;
+background-color: black;
+padding: 0.5rem 1.5rem;
+border-radius: .5rem;
+transition: bottom 1s ease-in-out ;
+}
+
+.btn0{
+  position: relative;
+  left: 37%;
+  bottom: -2%;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: .5rem;
+}
+.btn0:hover{
+  position: relative;
+  left: 35%;
+  bottom: -2%;
   font-size: 24px;
 }

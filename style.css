@@ -75,7 +75,7 @@ h3 {
   height: 500px;
   border: 1px solid #ccc;
   border-radius: 7%;
-  background: url(/chayathorndev.github.io/images/web.png);
+  background: url(./images/web.png);
   background-size: cover;
   background-position-y: 0%;
   transition: background 3s ease-in-out;

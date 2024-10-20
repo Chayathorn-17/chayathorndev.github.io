@@ -1,0 +1,319 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.head{
+    background-color:rgb(105,105,105);
+    height: 40px;
+}
+.head ul a{
+    text-decoration: none;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    justify-self: center;
+}
+
+.grid-tem{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-family: monospace;
+}
+.grid-tem img{
+    width: 100%;
+}
+.grid-item-1{
+    box-shadow: 3px 3px 10(0,0,0,0.2);
+    margin: 2rem;
+}
+.grid-item-2{
+    padding: 20px;
+    margin: 3rem;
+    border: 1px solid black;
+}
+.grid-item-3{
+    grid-column: 3 / 5;
+    margin: 3rem;
+    padding: 20px;
+    border: 1px solid black;
+}
+.grid-item-4{
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 20px;
+}
+.grid-item-4 h2{
+    text-align: left;
+}
+/*bar*/
+.grid-item-4 .bar{
+    width: 100%;
+    background-color: #ddd;
+    box-shadow: 3px 3px 2px (0,0,0,2);
+    border-radius: 5rem;
+}
+/*skills*/
+.skills {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+    box-shadow: 3px 3px 2px (0,0,0,2);
+  }
+  /* bar skills mix*/
+.py{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 40%;
+    border-radius: 5rem;
+    animation: py 3s;
+    text-align: center;
+}
+.java{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 60%;
+    border-radius: 5rem;
+    animation: java 3s;
+    text-align: center;
+}
+.C1{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 30%;
+    border-radius: 5rem;
+    animation: C1 3s;
+    text-align: center;
+}
+.C2 {
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 50%;
+    border-radius: 5rem;
+    animation: C2 3s;
+    text-align: center;
+}
+.HC{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 80%;
+    border-radius: 5rem;
+    animation: HC 3s;
+    text-align: center;
+}
+.React{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 60%;
+    border-radius: 5rem;
+    animation: React 3s;
+    text-align: center;
+}
+.Node{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 70%;
+    border-radius: 5rem;
+    animation: Node 3s;
+    text-align: center;
+}
+.SQL{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 60%;
+    border-radius: 5rem;
+    animation: SQL 3s;
+    text-align: center;
+}
+.Mongo{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 40%;
+    border-radius: 5rem;
+    animation: Mongo 3s;
+    text-align: center;
+}
+.Firebase{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 50%;
+    border-radius: 5rem;
+    animation: Firebase 3s;
+    text-align: center;
+}
+.Git{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 40%;
+    border-radius: 5rem;
+    animation: Git 3s;
+    text-align: center;
+}
+.Power{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 80%;
+    border-radius: 5rem;
+    animation: Power 3s;
+    text-align: center;
+}.Word{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 90%;
+    border-radius: 5rem;
+    animation: Word 3s;
+    text-align: center;
+}.Excel{
+    background: linear-gradient(to right,rgb(178, 216, 42),rgb(71, 185, 219));
+    width: 70%;
+    border-radius: 5rem;
+    animation: Excel 3s;
+    text-align: center;
+}
+/*key frame bar skills animation*/
+@keyframes py {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+    
+}
+@keyframes C1{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+    
+}
+@keyframes C2{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+    
+}
+@keyframes HC {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes React {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes Node {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes SQL {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes Mongo {
+    0%{
+        width: 0%; 
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes Firebase {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes Git {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes Power {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes Word {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes Excel {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+.grid-item-5{
+    grid-column: 1/2;
+    margin: 2rem;
+    border: 1px solid black;
+}
+.grid-item-6{
+    grid-column: 2 / 5;
+    grid-row: 2 / 3 ;
+    margin: 3rem;
+}
+.grid-item-6 img{
+    width: 10%;
+    margin-left: 50%;
+    
+}
+.web{
+    background: url(./images/web.png);
+    background-size: cover;
+    width: 100%;
+    height: 90%;
+    background-position-y:0% ;
+    transition: background 5s ease-in-out;
+}
+.web:hover{
+    background-position-y: 100% ;
+    cursor: pointer;
+}
+.grid-item-7{
+    border: 1px solid black;
+}
+.grid-item-8{
+    border: 1px solid black;
+}
